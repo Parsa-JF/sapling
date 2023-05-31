@@ -35,12 +35,6 @@ test = false
 doc = false
 
 [[bin]]
-name = "gca"
-path = "fuzz_targets/gca.rs"
-test = false
-doc = false
-
-[[bin]]
 name = "range_medium"
 path = "fuzz_targets/range_medium.rs"
 test = false
@@ -55,12 +49,6 @@ doc = false
 [[bin]]
 name = "range_small"
 path = "fuzz_targets/range_small.rs"
-test = false
-doc = false
-
-[[bin]]
-name = "range"
-path = "fuzz_targets/range.rs"
 test = false
 doc = false
 

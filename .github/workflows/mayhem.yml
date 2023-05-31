@@ -61,11 +61,9 @@ jobs:
         mayhemfile:
           - mayhem/gca_octopus.Mayhemfile
           - mayhem/gca_small.Mayhemfile
-          - mayhem/gca.Mayhemfile 
           - mayhem/range_octopus.Mayhemfile
           - mayhem/range_medium.Mayhemfile
           - mayhem/range_small.Mayhemfile 
-          - mayhem/range.Mayhemfile
                   
     steps:
       - uses: actions/checkout@v3

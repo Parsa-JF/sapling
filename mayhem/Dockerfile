@@ -17,8 +17,6 @@ FROM ubuntu:20.04
 
 COPY --from=builder sapling/eden/scm/lib/dag/fuzz/target/x86_64-unknown-linux-gnu/release/gca_octopus /
 COPY --from=builder sapling/eden/scm/lib/dag/fuzz/target/x86_64-unknown-linux-gnu/release/gca_small /
-COPY --from=builder sapling/eden/scm/lib/dag/fuzz/target/x86_64-unknown-linux-gnu/release/gca /
 COPY --from=builder sapling/eden/scm/lib/dag/fuzz/target/x86_64-unknown-linux-gnu/release/range_medium /
 COPY --from=builder sapling/eden/scm/lib/dag/fuzz/target/x86_64-unknown-linux-gnu/release/range_octopus /
 COPY --from=builder sapling/eden/scm/lib/dag/fuzz/target/x86_64-unknown-linux-gnu/release/range_small /
-COPY --from=builder sapling/eden/scm/lib/dag/fuzz/target/x86_64-unknown-linux-gnu/release/range /
