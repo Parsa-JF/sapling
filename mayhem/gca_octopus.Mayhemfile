@@ -1,0 +1,5 @@
+project: sapling
+target: gca_octopus
+
+cmds:
+  - cmd: /gca_octopus

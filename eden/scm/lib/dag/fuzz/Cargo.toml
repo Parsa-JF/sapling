@@ -1,0 +1,66 @@
+[package]
+name = "sapling-fuzz"
+version = "0.0.0"
+authors = ["Automatically generated"]
+publish = false
+edition = "2018"
+
+[package.metadata]
+cargo-fuzz = true
+
+[dependencies]
+libfuzzer-sys = "0.4"
+lazy_static = "1.4.0"
+
+[dependencies.dag]
+path = ".."
+
+[dependencies.bindag]
+path = "../bindag"
+
+# Prevent this from interfering with workspaces
+[workspace]
+members = ["."]
+
+[[bin]]
+name = "gca_octopus"
+path = "fuzz_targets/gca_octopus.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "gca_small"
+path = "fuzz_targets/gca_small.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "gca"
+path = "fuzz_targets/gca.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "range_medium"
+path = "fuzz_targets/range_medium.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "range_octopus"
+path = "fuzz_targets/range_octopus.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "range_small"
+path = "fuzz_targets/range_small.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "range"
+path = "fuzz_targets/range.rs"
+test = false
+doc = false
+

@@ -1,0 +1,5 @@
+project: sapling
+target: range_small
+
+cmds:
+  - cmd: /range_small
